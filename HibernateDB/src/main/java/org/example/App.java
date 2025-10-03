@@ -32,22 +32,22 @@ public class App
 
         switch (action) {
             case "1":
-                PersonDAO.create();
+                PersonConsole.createConsole();
                 flag = false;
                 break;
 
             case "2":
-                PersonDAO.read();
+                PersonConsole.readConsole();
                 flag = false;
                 break;
 
             case "3":
-                PersonDAO.update();
+                PersonConsole.updateConsole();
                 flag = false;
                 break;
 
             case "4":
-                PersonDAO.delete();
+                PersonConsole.deleteConsole();
                 flag = false;
                 break;
 
