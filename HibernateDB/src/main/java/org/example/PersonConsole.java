@@ -17,24 +17,21 @@ public class PersonConsole {
     {
         Scanner scanner = new Scanner(System.in);
         int age = -1;
-        int counterAge = 0;
+
 
         System.out.println("Введите имя человека: ");
         String name = scanner.nextLine();
 
-
-        while (age < 0 || age > 100) {
-            if(counterAge == 0)
-            {
-                System.out.println("Введите возраст человека: ");
-            }
-            else if (age < 0 || age > 100) {
-                System.out.println("Введите корректный возраст человека: ");
-            }
+        System.out.println("Введите возраст человека: ");
+        age = Integer.parseInt(scanner.nextLine());
+        while (age < 0 || age > 100)
+        {
+            System.out.println("Введите корректный возраст человека: ");
 
             age = Integer.parseInt(scanner.nextLine());
-            counterAge++;
+
         }
+
 
         System.out.println("Введите email человека: ");
         String email = scanner.nextLine();
